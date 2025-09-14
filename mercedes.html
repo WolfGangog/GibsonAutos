@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz - Gibson Autos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.carscoops.com/wp-content/uploads/2015/02/12192ecb-mercedes-amg-gt3-2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .car-card {
+            transition: all 0.3s ease;
+        }
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 px-6 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="car" class="text-red-500"></i>
+                <span class="text-xl font-bold">Gibson Autos</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-red-500 transition">Home</a>
+                <a href="index.html#about" class="hover:text-red-500 transition">About</a>
+                <a href="index.html#car-parts" class="hover:text-red-500 transition">Car Parts</a>
+                <a href="index.html#contact" class="hover:text-red-500 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <i data-feather="menu" class="cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">Mercedes-Benz Vehicles</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Discover the epitome of luxury and performance with Mercedes-Benz
+            </p>
+        </div>
+    </section>
+
+    <!-- Mercedes-Benz Cars -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Available Mercedes-Benz Models</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Car 1 -->
+                <div class="car-card bg-gray-50 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://www.edmunds.com/assets/m/mercedes-benz/c-class/2022/oem/2022_mercedes-benz_c-class_sedan_c-300-4matic_fq_oem_1_815.jpg" alt="Mercedes C-Class" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mercedes C-Class 2022</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">Sedan</span>
+                            <span class="text-green-600 font-bold">Available</span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Mileage:</span>
+                                <span>12,000 km</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Transmission:</span>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Fuel:</span>
+                                <span>Petrol</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold">₦20,500,000</span>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card bg-gray-50 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_amg-gle-53_fq_oem_5_1280x855.jpg" alt="Mercedes GLE" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mercedes GLE 2021</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">SUV</span>
+                            <span class="text-green-600 font-bold">Available</span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Mileage:</span>
+                                <span>18,000 km</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Transmission:</span>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Fuel:</span>
+                                <span>Diesel</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">₦28,800,000</span>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card bg-gray-50 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/e-class/2023/oem/2023_mercedes-benz_e-class_sedan_e-350-4matic_fq_oem_1_1280x855.jpg" alt="Mercedes E-Class" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mercedes E-Class 2023</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">Sedan</span>
+                            <span class="text-green-600 font-bold">Available</span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Mileage:</span>
+                                <span>7,000 km</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Transmission:</span>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Fuel:</span>
+                                <span>Petrol</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">₦25,200,000</span>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-card bg-gray-50 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/glc-class/2022/oem/2022_mercedes-benz_glc-class_4dr-suv_amg-glc-43_fq_oem_4_1280x855.jpg" alt="Mercedes GLC" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mercedes GLC 2022</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">SUV</span>
+                            <span class="text-green-600 font-bold">Available</span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Mileage:</span>
+                                <span>15,000 km</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Transmission:</span>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Fuel:</span>
+                                <span>Petrol</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">₦23,900,000</span>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car-card bg-gray-50 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://www.edmunds.com/assets/m/mercedes-benz/s-class/2021/oem/2021_mercedes-benz_s-class_sedan_s-500-4matic_fq_oem_1_815.jpg" alt="Mercedes S-Class" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mercedes S-Class 2021</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">Luxury Sedan</span>
+                            <span class="text-green-600 font-bold">Available</span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Mileage:</span>
+                                <span>20,000 km</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Transmission:</span>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Fuel:</span>
+                                <span>Petrol</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">₦35,500,000</span>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car-card bg-gray-50 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://www.edmunds.com/assets/m/mercedes-benz/gls-class/2021/oem/2021_mercedes-benz_gls-class_4dr-suv_amg-gls-63_fq_oem_1_815.jpg" alt="Mercedes GLS" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mercedes GLS 2023</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-600">Luxury SUV</span>
+                            <span class="text-green-600 font-bold">Available</span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Mileage:</span>
+                                <span>5,000 km</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500 mb-1">
+                                <span>Transmission:</span>
+                                <span>Automatic</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Fuel:</span>
+                                <span>Diesel</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">₦42,700,000</span>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="car" class="text-red-500"></i>
+                        <span class="text-xl font-bold">Gibson Autos</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">Premium car dealership since 2024</p>
+                </div>
+                <div class="flex flex-wrap justify-center md:justify-end space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition">Home</a>
+                    <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+                    <a href="index.html#car-parts" class="text-gray-400 hover:text-white transition">Car Parts</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Gibson Autos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
