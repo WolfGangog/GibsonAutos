@@ -381,6 +381,14 @@
                     alert('Oops! There was a problem.');
                 });
             });
+
+            // Autofill message bar with car name and color from localStorage
+            const messageInput = document.getElementById('message');
+            const carMessage = localStorage.getItem('carMessage');
+            if (messageInput && carMessage) {
+                messageInput.value = carMessage;
+                localStorage.removeItem('carMessage');
+            }
         });
     </script>
 </body>
