@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes GLE 2021- Gibson Autos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 px-6 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="car" class="text-red-500"></i>
+                <span class="text-xl font-bold">Gibson Autos</span>
+            </div>
+            <button onclick="window.history.back()" class="bg-gray-800 hover:bg-red-600 text-white px-4 py-2 rounded transition font-semibold">
+                &larr; Back
+            </button>
+        </div>
+    </nav>
+
+    <!-- Car Details Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto bg-gray-50 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <!-- Main image -->
+                <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_amg-gle-63-s_fq_oem_1_1600x1067.jpg" alt="Mercedes GLE 2021Front" class="w-full h-65 object-cover mb-4">
+                <!-- Additional images -->
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_amg-gle-63-s_f_oem_1_1600x1067.jpg" alt="Mercedes GLE 2021Front View" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_amg-gle-63-s_r_oem_1_1600x1067.jpg" alt="Mercedes GLE 2021Rear View" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_gle-350-4matic_s_oem_2_1600x1067.jpg" alt="Mercedes GLE 2021Left Side" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_amg-gle-63-s_s_oem_1_1600x1067.jpg" alt="Mercedes GLE 2021Right Side" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_gle-350-4matic_cargo_oem_1_1600x1067.jpg" alt="Mercedes GLE 2021Boot" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_amg-gle-63-s_e_oem_1_1600x1067.jpg" alt="Mercedes GLE 2021Engine" class="w-full h-40 object-cover rounded bg-white">
+                </div>
+                <img src="https://media.ed.edmunds-media.com/mercedes-benz/gle-class/2021/oem/2021_mercedes-benz_gle-class_4dr-suv_amg-gle-53_d_oem_1_1600x1067.jpg" alt="Mercedes GLE 2021Interior" class="w-full h-65 object-cover rounded mb-4">
+                <div class="p-8">
+                    <h1 class="text-3xl font-bold mb-4">Mercedes GLE 2021</h1>
+                    <!-- Color Selection Section -->
+                    <div class="mb-6">
+                        <h2 class="text-lg font-semibold mb-2">Choose Color:</h2>
+                        <div class="flex space-x-4" id="colorOptions">
+                            <button class="w-10 h-10 rounded-full border-2 border-gray-300 bg-black" title="Black" data-color="Black"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-gray-300 bg-red-600" title="Red" data-color="Red"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-gray-300 bg-white" title="White" data-color="White"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-gray-300 bg-blue-600" title="Blue" data-color="Blue"></button>
+                        </div>
+                        <input type="hidden" id="selectedColor" value="">
+                    </div>
+                    <ul class="mb-6 text-gray-700">
+                        <li><strong>Type:</strong> Luxury SUV</li>
+                        <li><strong>Mileage:</strong> 11 to 14kmpl</li>
+                        <li><strong>Transmission:</strong> Automatic</li>
+                        <li><strong>Fuel:</strong> Petrol</li>
+                        <li><strong>Status:</strong> <span class="text-green-600 font-bold">Available</span></li>
+                    </ul>
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold text-red-600">₦100,000,000</span>
+                    </div>
+                    <a href="index.html#contact" id="buyBtn" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded font-bold transition">Contact to Buy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto px-6">
+            <div class="border-t border-gray-800 pt-4 text-center text-gray-500">
+                <p>&copy; 2023 Gibson Autos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+
+        // Color selection logic
+        const colorButtons = document.querySelectorAll('#colorOptions button');
+        const selectedColorInput = document.getElementById('selectedColor');
+        let selectedColor = '';
+
+        colorButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                colorButtons.forEach(b => b.classList.remove('ring-4', 'ring-red-500'));
+                this.classList.add('ring-4', 'ring-red-500');
+                selectedColor = this.getAttribute('data-color');
+                selectedColorInput.value = selectedColor;
+            });
+        });
+
+        // Buy button logic
+        document.getElementById('buyBtn').addEventListener('click', function(e) {
+            if (!selectedColor) {
+                alert('Please select a color before proceeding.');
+                e.preventDefault();
+                return;
+            }
+            // Store car name and color in localStorage for the contact page
+            localStorage.setItem('carMessage', 'Mercedes GLE 2021- Color: ' + selectedColor);
+        });
+    </script>
+</body>
+</html>
