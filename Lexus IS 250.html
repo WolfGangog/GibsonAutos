@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexus IS 250 Sedan - Gibson Autos</title>
+    <link rel="shortcut icon" href="https://sdmntprnortheu.oaiusercontent.com/files/00000000-f520-61f4-9760-ede10efadd92/raw?se=2025-09-19T13%3A09%3A55Z&sp=r&sv=2024-08-04&sr=b&scid=7697c1c7-3d21-5e08-ae74-77c45714a46f&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-19T00%3A15%3A17Z&ske=2025-09-20T00%3A15%3A17Z&sks=b&skv=2024-08-04&sig=4IFpE3WRswSmDY8bC8Y1fKO0v3vFDmPirtdWxAFzZEY%3D" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 px-6 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="car" class="text-red-500"></i>
+                <span class="text-xl font-bold">Gibson Autos</span>
+            </div>
+            <button onclick="window.history.back()" class="bg-gray-800 hover:bg-red-600 text-white px-4 py-2 rounded transition font-semibold">
+                &larr; Back
+            </button>
+        </div>
+    </nav>
+
+    <!-- Car Details Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto bg-gray-50 rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <!-- Main image -->
+                <img src="https://media.ed.edmunds-media.com/lexus/is-250/2014/oem/2014_lexus_is-250_sedan_base_fq_oem_4_1280x855.jpg" alt="Lexus IS 250 Sedan Front" class="w-full h-65 object-cover mb-4">
+                <!-- Additional images -->
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <img src="https://media.ed.edmunds-media.com/lexus/is-250/2014/oem/2014_lexus_is-250_sedan_base_f_oem_1_1280x855.jpg" alt="Lexus IS 250 Sedan Front View" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://www.cnet.com/a/img/resize/19ca913c60963913f87fe0096333ebbbed8d6365/hub/2014/11/11/c13c6473-41c4-46b4-84ae-fadb935a0c2d/lexusis250-2015-08.jpg?auto=webp&width=1200" alt="Lexus IS 250 Sedan Rear View" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://www.automotiveaddicts.com/wp-content/uploads/2013/10/2014-Lexus-IS250-Beauty-Side-Done-Smalll.jpg" alt="Lexus IS 250 Sedan Left Side" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://www.cnet.com/a/img/resize/fcf22d1c31f1633f760063ad55e53ba3d0bc22d5/hub/2014/11/11/6e894ddb-5659-4b9a-b106-dd39342305cb/lexusis250-2015-06.jpg?auto=webp&width=1200" alt="Lexus IS 250 Sedan Right Side" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://blog.consumerguide.com/wp-content/uploads/sites/2/2014/04/7-1024x768.jpg" alt="Lexus IS 250 Sedan Boot" class="w-full h-40 object-cover rounded bg-white">
+                    <img src="https://media.ed.edmunds-media.com/lexus/is-250/2014/oem/2014_lexus_is-250_sedan_base_e_oem_1_1280x855.jpg" alt="Lexus IS 250 Sedan Engine" class="w-full h-40 object-cover rounded bg-white">
+                </div>
+                <img src="https://www.groovecar.com/stock/images/stills/2008/lexus/is-250/4dr-sedan-6m/2008-lexus-is-250-4dr-sedan-6m-059-large.jpg" alt="Lexus IS 250 Sedan Interior" class="w-full h-65 object-cover rounded mb-4">
+                <div class="p-8">
+                    <h1 class="text-3xl font-bold mb-4">Lexus IS 250 Sedan</h1>
+                    <!-- Color Selection Section -->
+                    <div class="mb-6">
+                        <h2 class="text-lg font-semibold mb-2">Choose Color:</h2>
+                        <div class="flex space-x-4" id="colorOptions">
+                            <button class="w-10 h-10 rounded-full border-2 border-gray-300 bg-black" title="Black" data-color="Black"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-gray-300 bg-red-600" title="Red" data-color="Red"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-gray-300 bg-white" title="White" data-color="White"></button>
+                            <button class="w-10 h-10 rounded-full border-2 border-gray-300 bg-blue-600" title="Blue" data-color="Blue"></button>
+                        </div>
+                        <input type="hidden" id="selectedColor" value="">
+                    </div>
+                    <ul class="mb-6 text-gray-700">
+                        <li><strong>Type:</strong> Sedan</li>
+                        <li><strong>Mileage:</strong> 225 km/h</li>
+                        <li><strong>Transmission:</strong> Automatic</li>
+                        <li><strong>Fuel:</strong> Petrol</li>
+                        <li><strong>Status:</strong> <span class="text-green-600 font-bold">Available</span></li>
+                    </ul>
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold text-red-600">₦22,200,000</span>
+                    </div>
+                    <a href="index.html#contact" id="buyBtn" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded font-bold transition">Contact to Buy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto px-6">
+            <div class="border-t border-gray-800 pt-4 text-center text-gray-500">
+                <p>&copy; 2023 Gibson Autos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+
+        // Color selection logic
+        const colorButtons = document.querySelectorAll('#colorOptions button');
+        const selectedColorInput = document.getElementById('selectedColor');
+        let selectedColor = '';
+
+        colorButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                colorButtons.forEach(b => b.classList.remove('ring-4', 'ring-red-500'));
+                this.classList.add('ring-4', 'ring-red-500');
+                selectedColor = this.getAttribute('data-color');
+                selectedColorInput.value = selectedColor;
+            });
+        });
+
+        // Buy button logic
+        document.getElementById('buyBtn').addEventListener('click', function(e) {
+            if (!selectedColor) {
+                alert('Please select a color before proceeding.');
+                e.preventDefault();
+                return;
+            }
+            // Store car name and color in localStorage for the contact page
+            localStorage.setItem('carMessage', 'Lexus IS 250 Sedan - Color: ' + selectedColor);
+        });
+    </script>
+</body>
+</html>
